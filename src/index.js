@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 // Pages
 import Home from './pages/Home';
 import Padrinhos from './pages/Padrinhos';
+import ConfirmPresence from './pages/ConfirmPresence';
 
 // Components
 import Footer from './components/Footer';
@@ -20,7 +21,7 @@ ReactDOM.render(
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='padrinhos' element={<Padrinhos />} />
-      <Route path='confirme-presenca' element={<Padrinhos />} />
+      <Route path='confirme-presenca' element={<ConfirmPresence />} />
       <Route path='lista-de-presentes' element={<Padrinhos />} />
       <Route
         path='*'
