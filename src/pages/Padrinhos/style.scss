@@ -1,3 +1,53 @@
-.content {
-  width: 100%;
+$colors: #844981, #a9729c, #a96385, #d57897, #f0a4c8;
+$repeat: 22;
+
+.padrinhos {
+  .content {
+    width: 100%;
+  }
+
+  .img-box {
+    position: relative;
+    padding: 20px;
+
+    .card-img {
+      border-radius: 50%;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    height: 90%;
+    width: 90%;
+    opacity: 0;
+    transition: 0.5s ease;
+    border-radius: 50%;
+  }
+
+  @for $i from 1 through $repeat {
+    .overlay__bg-#{$i} {
+      background: nth($colors, random(length($colors)));
+    }
+  }
+
+  .img-box:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+  }
 }
