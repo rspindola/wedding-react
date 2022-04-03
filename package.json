@@ -15,7 +15,9 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-app-rewire-alias": "^1.1.7",
+    "react-app-rewired": "^2.2.1"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -41,8 +43,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "react-app-rewire-alias": "^1.1.7",
-    "react-app-rewired": "^2.2.1"
-  }
+  "devDependencies": {}
 }
