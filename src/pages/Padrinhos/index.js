@@ -11,20 +11,32 @@ const padrinhos = [
     name: 'Nayara Sardou',
   },
   {
-    photo: 'joao-kamila.jpeg',
-    name: 'João Miguel e Kamila Ercole',
+    photo: 'joao-miguel.jpeg',
+    name: 'João Miguel',
+  },
+  {
+    photo: 'kamila-ercole.jpeg',
+    name: 'Kamila Ercole',
   },
   {
     photo: 'igor-fernandes.jpeg',
     name: 'Igor Fernandes',
   },
   {
-    photo: 'carol-rodrigo.jpg',
-    name: 'Carolinne Barbosa e Rodrigo Costa',
+    photo: 'rodrigo-costa.jpeg',
+    name: 'Rodrigo Costa',
   },
   {
-    photo: 'rodolpho-brenda.png',
-    name: 'Brenda Almeida e Rodolpho Rubim ',
+    photo: 'carolinne-barbosa.jpeg',
+    name: 'Carolinne Barbosa',
+  },
+  {
+    photo: 'brenda-almeida.jpeg',
+    name: 'Brenda Almeida ',
+  },
+  {
+    photo: 'rodolpho-rubim.jpeg',
+    name: 'Rodolpho Rubim',
   },
   {
     photo: 'thiago-fernandes.jpeg',
@@ -75,8 +87,12 @@ const padrinhos = [
     name: 'Maykon Paiva',
   },
   {
-    photo: 'elias-isadora.jpeg',
-    name: 'Elias Martins e Isadora Caldas',
+    photo: 'isadora-caldas.jpeg',
+    name: 'Isadora Caldas',
+  },
+  {
+    photo: 'elias-martins.jpeg',
+    name: 'Elias Martins',
   },
   {
     photo: 'ana-clara.jpeg',
@@ -104,10 +120,11 @@ function Padrinhos() {
           AQUI ESTÃO AS PESSOAS QUE VÃO FAZER O NOSSO DIA AINDA MAIS ESPECIAL.
         </h3>
       </div>
-      <div className='content mt-5'>
-        <Row>
+
+      <div className='d-flex justify-content-center align-items-center flex-column'>
+        <Row className='col-lg-10 mt-5'>
           {padrinhos.map((p, index) => (
-            <Col className='img-box' xs={12} md={6} lg={3} key={index}>
+            <Col className='img-box' xs={12} md={6} lg={2} key={index}>
               <img
                 src={`/images/padrinhos/${p.photo}`}
                 className='card-img'
