@@ -1,13 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
+// Pages
+import Home from './pages/Home';
+import Padrinhos from './pages/Padrinhos';
+
+// Components
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/styles/scss/globals.scss';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Navbar />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='padrinhos' element={<Padrinhos />} />
+      <Route path='confirme-presenca' element={<Padrinhos />} />
+      <Route path='lista-de-presentes' element={<Padrinhos />} />
+      <Route
+        path='*'
+        element={
+          <main style={{ padding: '1rem' }}>
+            <p>There's nothing here!</p>
+          </main>
+        }
+      />
+    </Routes>
+    <Footer />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
