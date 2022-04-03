@@ -6,6 +6,7 @@ const Content = styled.div`
   margin-top: 30px;
   width: 80%;
   text-align: justify;
+  color: var(--grape);
 `;
 
 export const About = () => (

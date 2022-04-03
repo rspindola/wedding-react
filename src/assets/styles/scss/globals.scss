@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
 
+:root {
+  --primary: #6e5a97;
+  --secondary: #a28aaa;
+  --jacaranda: #868fc6;
+  --grape: #844981;
+  --mulberry: #a9729c;
+  --red-violet: #a96385;
+  --chateu-rose: #d57897;
+  --prism-pink: #f0a4c8;
+  --black: #333;
+  --white: #fff;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f8f7f0;
-  color: #333333;
+  background-color: #f5f2fe;
+  color: var(--black);
 }
 
 section {
@@ -28,6 +41,7 @@ section {
     text-align: center;
     margin: 15px 10px;
     font-weight: 700;
+    color: var(--primary);
   }
 
   .subtitle {
@@ -35,6 +49,7 @@ section {
     font-size: 1rem;
     text-align: center;
     margin: 15px 10px 50;
-    font-weight: 300;
+    // font-weight: 300;
+    color: var(--secondary);
   }
 }

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import HeroImg from '../../assets/images/bg-icasei.jpeg';
+import HeroImg from '../../assets/images/bg.webp';
 import Countdown from '../../components/Countdown';
 import About from '../../components/About';
 import Gallery from '../../components/Gallery';
@@ -25,6 +25,7 @@ function Home() {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: var(--primary);
   `;
   return (
     <>
