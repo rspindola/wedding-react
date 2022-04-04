@@ -1,4 +1,4 @@
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import { Confirm } from '../../components/Forms/Confirm/Confirm';
 import './style.scss';
 

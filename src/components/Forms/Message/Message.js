@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Container, Row, Col } from 'react-bootstrap';
+import { Form, Container, Row, Col, Button } from 'react-bootstrap';
 import '../style.scss';
 
 export const Message = () => (
@@ -37,6 +37,11 @@ export const Message = () => (
                 <Form.Label>Mensagem</Form.Label>
                 <Form.Control as='textarea' rows={5} />
               </Form.Group>
+              <div className="d-grid gap-2">
+                <Button variant="primary" size="lg">
+                  Enviar
+                </Button>
+              </div>
             </Form>
           </Col>
         </Row>

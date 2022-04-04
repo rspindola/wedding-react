@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Container, Row, Col, FloatingLabel } from 'react-bootstrap';
+import { Form, Container, Row, Col, FloatingLabel, Button } from 'react-bootstrap';
 import '../style.scss';
 
 export const Confirm = () => (
@@ -55,6 +55,11 @@ export const Confirm = () => (
               style={{ height: '200px' }}
             />
           </FloatingLabel>
+          <div className="d-grid gap-2">
+            <Button variant="primary" size="lg">
+              Enviar
+            </Button>
+          </div>
         </Form>
       </Col>
     </Row>
