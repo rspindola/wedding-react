@@ -17,14 +17,14 @@ $repeat: 26;
 
   .overlay {
     position: absolute;
-    top: 17px;
+    top: 20px;
     bottom: 0;
-    left: 17px;
+    left: 20px;
     right: 0;
-    height: 90%;
-    width: 90%;
+    height: 83%;
+    width: 83%;
     opacity: 0;
-    transition: 0.5s ease;
+    transition: 0.8s ease;
     border-radius: 50%;
   }
 

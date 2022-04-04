@@ -121,10 +121,10 @@ function Padrinhos() {
         </h3>
       </div>
 
-      <div className='d-flex justify-content-center align-items-center flex-column'>
-        <Row className='col-lg-10 mt-5'>
+      <div className='container d-flex justify-content-center align-items-center flex-column'>
+        <Row className='mt-5'>
           {padrinhos.map((p, index) => (
-            <Col className='img-box' xs={12} md={6} lg={2} key={index}>
+            <Col className='img-box' xs={6} md={4} lg={2} key={index}>
               <img
                 src={`/images/padrinhos/${p.photo}`}
                 className='card-img'

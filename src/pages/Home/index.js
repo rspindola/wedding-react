@@ -1,13 +1,16 @@
 import styled from 'styled-components';
-import HeroImg from '../../assets/images/bg.webp';
 import Countdown from '../../components/Countdown';
 import About from '../../components/About';
 import Gallery from '../../components/Gallery';
 import Message from '../../components/Forms/Message';
 
+// Assets
+import HeroBG from '../../assets/images/bg.webp';
+import HeroImg from '../../assets/images/hero.png';
+
 function Home() {
   const Hero = styled.div`
-    background-image: url(${HeroImg});
+    background-image: url(${HeroBG});
 
     /* Set a specific height */
     height: 100vh;
@@ -17,23 +20,25 @@ function Home() {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    display; flex;
+    align-items: center;
+    justify-content: center;
   `;
 
-  const HeroText = styled.div`
+  const HeroLogo = styled.img`
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--primary);
+    height: 50%;
   `;
+
   return (
     <>
       <Hero>
-        <HeroText>
-          <p>04/02/2023</p>
-          <h1>Julianne Teixeira & Renato Spíndola</h1>
-        </HeroText>
+        <HeroLogo src={HeroImg} alt="Imagem do hero" />
       </Hero>
       <Countdown date={`2023-02-04T00:00:00`} />
       <About />

@@ -7,6 +7,10 @@ const Content = styled.div`
   width: 80%;
   text-align: justify;
   color: var(--grape);
+
+  @media (max-width: 599px) {
+    width: 100%;
+  }
 `;
 
 export const About = () => (

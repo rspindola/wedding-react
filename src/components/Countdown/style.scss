@@ -1,3 +1,5 @@
+@import "../../assets/styles/scss/mixins";
+
 .countdown {
   text-align: center;
   padding-bottom: 20px;
@@ -17,10 +19,17 @@
       .number {
         margin-bottom: 10px;
         padding: 5px;
+        @include for-size(phone-only) {
+          margin-bottom: 0;
+        }
       }
 
       strong {
         font-size: 50px;
+
+        @include for-size(phone-only) {
+          font-size: 25px;
+        }
       }
     }
   }
