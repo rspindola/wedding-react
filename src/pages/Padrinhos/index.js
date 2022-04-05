@@ -1,4 +1,6 @@
 import { Row, Col } from 'react-bootstrap';
+import DocumentMeta from 'react-document-meta';
+
 import './style.scss';
 
 const padrinhos = [
@@ -109,35 +111,50 @@ const padrinhos = [
 ];
 
 function Padrinhos() {
+  const meta = {
+    title: 'Julianne & Renato - Padrinhos',
+    description: 'O amor move e constrói e quem o encontra tem a certeza de que a vida já valeu a pena. Quem o apoia aprende que a vida sempre tem sentido para quem acredita na beleza dela',
+    canonical: 'http://renatoejulianne.com',
+    meta: {
+      charset: 'utf-8',
+      name: {
+        keywords: 'react,meta,document,html,tags'
+      }
+    }
+  };
+
   padrinhos.sort(function (a, b) {
     return a.name > b.name ? 1 : b.name > a.name ? -1 : 0;
   });
   return (
-    <section className='padrinhos'>
-      <div className='head'>
-        <h2 className='title'>PADRINHOS</h2>
-        <h3 className='subtitle'>
-          AQUI ESTÃO AS PESSOAS QUE VÃO FAZER O NOSSO DIA AINDA MAIS ESPECIAL.
-        </h3>
-      </div>
+    <DocumentMeta {...meta}>
 
-      <div className='container d-flex justify-content-center align-items-center flex-column'>
-        <Row className='mt-5'>
-          {padrinhos.map((p, index) => (
-            <Col className='img-box' xs={6} md={4} lg={2} key={index}>
-              <img
-                src={`/images/padrinhos/${p.photo}`}
-                className='card-img'
-                alt={`Foto de ${p.name}`}
-              />
-              <div className={`overlay overlay__bg-${index + 1}`}>
-                <div className='text'>{p.name}</div>
-              </div>
-            </Col>
-          ))}
-        </Row>
-      </div>
-    </section>
+      <section className='padrinhos'>
+        <div className='head'>
+          <h2 className='title'>PADRINHOS</h2>
+          <h3 className='subtitle'>
+            AQUI ESTÃO AS PESSOAS QUE VÃO FAZER O NOSSO DIA AINDA MAIS ESPECIAL.
+          </h3>
+        </div>
+
+        <div className='container d-flex justify-content-center align-items-center flex-column'>
+          <Row className='mt-5'>
+            {padrinhos.map((p, index) => (
+              <Col className='img-box' xs={6} md={4} lg={2} key={index}>
+                <img
+                  src={`/images/padrinhos/${p.photo}`}
+                  className='card-img'
+                  alt={`Foto de ${p.name}`}
+                />
+                <div className={`overlay overlay__bg-${index + 1}`}>
+                  <div className='text'>{p.name}</div>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </div>
+      </section>
+    </DocumentMeta>
   );
 }
 

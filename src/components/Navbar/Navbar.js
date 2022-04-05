@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import styled from 'styled-components';
 import { Outlet, Link } from 'react-router-dom';
-import logo from '@assets/logo.svg';
+import logo from '@assets/images/hero.png';
 import './style.scss';
 
 const StyledNavbar = styled(Navbar)`
