@@ -1,3 +1,15 @@
 input {
   background-color: red;
 }
+
+.btn-primary {
+  color: #fff;
+  background-color: #a9729c;
+  border-color: #3d3440;
+
+  &:hover {
+    color: #fff;
+    background-color: #a28aaa;
+    border-color: #a28aaa;
+  }
+}

@@ -36,7 +36,7 @@ function Gifts() {
                 <div class="card-body">
                   <h5 class="card-title">Camicado</h5>
                   <p class="card-text">Na Camicado você encontra diversas opções itens de decoração, eletro, cozinha, cama, mesa e banho, churrasco. E também pode criar a sua lista de presentes.</p>
-                  <a href="https://www.camicado.com.br/lista/convidado/julianne.renato" target="_blank" rel="noopener noreferrer">Clique aqui para acessar o site</a>
+                  <a href="https://lista.camicado.com.br/julianneerenato" target="_blank" rel="noopener noreferrer">Clique aqui para acessar o site</a>
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ function Gifts() {
                 <div class="card-body">
                   <h5 class="card-title">Casa Riachuelo</h5>
                   <p class="card-text">Aqui você pode comprar as roupas da moda para renovar o seu guarda roupa e usar no seu dia a dia, além de decoração e produtos pra casa!</p>
-                  <a href="https://www.domeujeito.com.br/lista/julianne-renato" target="_blank" rel="noopener noreferrer">Clique aqui para acessar o site</a>
+                  <a href="https://www.domeujeito.com.br/lista/julianneerenato" target="_blank" rel="noopener noreferrer">Clique aqui para acessar o site</a>
                 </div>
               </div>
             </div>

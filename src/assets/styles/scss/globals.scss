@@ -61,3 +61,26 @@ section {
     }
   }
 }
+
+.btn-primary {
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #a9729c;
+  border-color: #3d3440;
+
+  &:hover {
+    color: #fff;
+    background-color: #a28aaa;
+    border-color: #a28aaa;
+  }
+}
+
+.input-error {
+  border-color: #dc3545;
+}
+
+.invalid {
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #dc3545;
+}
