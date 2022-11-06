@@ -23,7 +23,7 @@ function Home() {
     background-size: cover;
     position: relative;
 
-    display; flex;
+    display: flex;
     align-items: center;
     justify-content: center;
   `;

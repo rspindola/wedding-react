@@ -3,12 +3,12 @@ import { Container, Row, Col } from 'react-bootstrap';
 import './style.scss';
 
 const photos = [
-  'https://mdbootstrap.com/img/new/standard/city/041.webp',
-  'https://mdbootstrap.com/img/new/standard/city/041.webp',
-  'https://mdbootstrap.com/img/new/standard/city/041.webp',
-  'https://mdbootstrap.com/img/new/standard/city/041.webp',
-  'https://mdbootstrap.com/img/new/standard/city/041.webp',
-  'https://mdbootstrap.com/img/new/standard/city/041.webp',
+  'one.jpg',
+  'two.jpg',
+  'three.jpg',
+  'four.jpg',
+  'five.jpg',
+  'six.jpg',
 ];
 
 export const Gallery = () => (
@@ -21,7 +21,7 @@ export const Gallery = () => (
         {photos.map((photo, index) => (
           <Col className='my-2' xs={12} md={6} lg={4}>
             <img
-              src={photo}
+              src={`/images/${photo}`}
               className='img-thumbnail hover-shadow rounded'
               alt='...'
             />
