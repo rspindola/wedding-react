@@ -3,6 +3,7 @@ import DocumentMeta from 'react-document-meta';
 import { Row } from 'react-bootstrap';
 import { Confirm } from '@components/Forms/Confirm/Confirm';
 import './style.scss';
+import { useEffect } from 'react';
 
 function ConfirmPresence() {
   const meta = {
@@ -16,6 +17,12 @@ function ConfirmPresence() {
       }
     }
   };
+
+  useEffect(() => {
+    // Atualiza o título do documento usando a API do browser
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
   return (
     <DocumentMeta {...meta}>
       <section className='padrinhos'>
@@ -27,7 +34,7 @@ function ConfirmPresence() {
         </div>
 
         <div className='d-flex justify-content-center align-items-center flex-column'>
-          <Row className='col-lg-10 mt-5'>
+          <Row className='col-lg-10'>
             <Confirm />
           </Row>
         </div>

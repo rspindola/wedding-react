@@ -9,8 +9,15 @@ import Message from '@components/Forms/Message';
 // Assets
 import HeroBG from '@assets/images/bg.webp';
 import HeroImg from '@assets/images/hero.png';
+import { useEffect } from 'react';
+
 
 function Home() {
+  useEffect(() => {
+    // Atualiza o título do documento usando a API do browser
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
   const Hero = styled.div`
     background-image: url(${HeroBG});
 

@@ -19,7 +19,7 @@ export const Footer = () => (
   <footer className='container'>
     <Row className='justify-content-between'>
       <Col>
-        <ScrollTop onClick={scrollTop}>Back to to</ScrollTop>
+        {/* <ScrollTop onClick={scrollTop}>Back to to</ScrollTop> */}
       </Col>
       <Col className='text-right'>
         <p>© 2022 Company, Inc.</p>

@@ -3,6 +3,7 @@ import DocumentMeta from 'react-document-meta';
 import riachueloImg from '@assets/images/riachuelo.png';
 import camicadoImg from '@assets/images/camicado.png';
 import './style.scss';
+import { useEffect } from 'react';
 
 function Gifts() {
   const meta = {
@@ -16,6 +17,12 @@ function Gifts() {
       }
     }
   };
+
+  useEffect(() => {
+    // Atualiza o título do documento usando a API do browser
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
   return (
     <DocumentMeta {...meta}>
       <section className='padrinhos'>

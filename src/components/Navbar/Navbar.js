@@ -17,7 +17,7 @@ const StyledNav = styled(Link)`
 `;
 
 export const CustomNavbar = () => (
-  <StyledNavbar className='shadow-sm' expand='lg' sticky='top'>
+  <StyledNavbar collapseOnSelect className='shadow-sm' expand='lg' sticky='top'>
     <Container>
       <Navbar.Brand as={Link} to='/'>
         <img
@@ -26,11 +26,11 @@ export const CustomNavbar = () => (
           width='30'
           height='30'
           className='d-inline-block align-top'
-        />{' '}
+        />
         Julianne & Renato
       </Navbar.Brand>{' '}
-      <Navbar.Toggle />
-      <Navbar.Collapse className='justify-content-end'>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
         <Nav.Link as={StyledNav} to='/padrinhos'>
           Padrinhos
         </Nav.Link>

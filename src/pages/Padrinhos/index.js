@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import DocumentMeta from 'react-document-meta';
 
@@ -126,6 +127,12 @@ function Padrinhos() {
   padrinhos.sort(function (a, b) {
     return a.name > b.name ? 1 : b.name > a.name ? -1 : 0;
   });
+
+  useEffect(() => {
+    // Atualiza o título do documento usando a API do browser
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
   return (
     <DocumentMeta {...meta}>
 
