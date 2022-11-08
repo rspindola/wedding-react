@@ -16,15 +16,19 @@ const StyledNav = styled(Link)`
   }
 `;
 
+const LogoImg = styled.img`
+  margin-right: 0.5rem;
+  width:30px;
+  height:30px;
+`
+
 export const CustomNavbar = () => (
   <StyledNavbar collapseOnSelect className='shadow-sm' expand='lg' sticky='top'>
     <Container>
       <Navbar.Brand as={Link} to='/'>
-        <img
-          alt=''
+        <LogoImg
+          alt='Logo do site'
           src={logo}
-          width='30'
-          height='30'
           className='d-inline-block align-top'
         />
         Julianne & Renato
