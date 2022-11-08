@@ -22,7 +22,7 @@ export const Footer = () => (
         {/* <ScrollTop onClick={scrollTop}>Back to to</ScrollTop> */}
       </Col>
       <Col className='text-right'>
-        <p>© 2022 Company, Inc.</p>
+        <p>© 2022 <a href="http://renatospindola.com.br" target="_blank" rel="noreferrer">RSystems</a></p>
       </Col>
     </Row>
   </footer>
