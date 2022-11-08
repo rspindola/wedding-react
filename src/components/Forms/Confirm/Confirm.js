@@ -29,7 +29,7 @@ export function Confirm() {
 
   const onSubmit = (data) => {
     console.log(data)
-    axios.post('http://localhost:8000/api/confirmation', data)
+    axios.post('https://wedding.renatospindola.com.br/api/confirmation', data)
       .then(function (response) {
         MySwal.fire({
           title: <strong>Parabéns!</strong>,
