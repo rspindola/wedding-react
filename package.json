@@ -19,12 +19,14 @@
     "react-dom": "^18.0.0",
     "react-hook-form": "^7.39.1",
     "react-input-mask": "^2.0.4",
+    "react-photo-album": "^2.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "styled-components": "^5.3.5",
     "sweetalert2": "^11.6.7",
     "sweetalert2-react-content": "^5.0.7",
     "web-vitals": "^2.1.4",
+    "yet-another-react-lightbox": "^2.2.3",
     "yup": "^0.32.11"
   },
   "scripts": {
