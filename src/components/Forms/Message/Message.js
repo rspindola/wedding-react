@@ -25,7 +25,7 @@ export function Message() {
 
   const onSubmit = (data) => {
     console.log(data)
-    axios.post('https://wedding.renatospindola.com.br/api/message', data)
+    axios.post('https://api.renatospindola.site/api/message', data)
       .then(function (response) {
         MySwal.fire({
           title: <strong>Obrigado!</strong>,
