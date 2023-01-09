@@ -10,8 +10,8 @@ const padrinhos = [
     name: 'Bruno William',
   },
   {
-    photo: 'nayara-sardou.jpg',
-    name: 'Nayara Sardou',
+    photo: 'carol-sales.jpg',
+    name: 'Carol Sales',
   },
   {
     photo: 'joao-miguel.jpeg',
